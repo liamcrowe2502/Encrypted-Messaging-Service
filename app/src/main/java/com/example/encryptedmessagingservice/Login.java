@@ -2,7 +2,10 @@ package com.example.encryptedmessagingservice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class Login extends AppCompatActivity {
 
@@ -10,5 +13,23 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        Button loginButton = (Button)findViewById(R.id.loginButton);
+        Button switchButton = (Button)findViewById(R.id.switchButton);
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Login.this, MainPage.class));
+            }
+        });
+
+        switchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Login.this, Register.class));
+            }
+        });
+
     }
 }
