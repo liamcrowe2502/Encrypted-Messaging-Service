@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "581272882099",
+    "project_id": "message-encryption-service",
+    "storage_bucket": "message-encryption-service.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581272882099:android:65d9a2dfd6bc52611119c6",
+        "android_client_info": {
+          "package_name": "com.example.encryptedmessagingservice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgYGc4j81NE9Mc8Mti5EtLEAg1Q6NmghI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
