@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainPage">
@@ -12,12 +10,73 @@
         android:id="@+id/userDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="21dp"
         android:text="Hello World!!" />
 
     <Button
         android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Logout" />
+        android:text="Logout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
 
-</LinearLayout>
+    <ListView
+        android:id="@+id/chatList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/userDetails"
+        android:layout_above="@id/iconButtons"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:id="@+id/iconButtons"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Call"
+            android:onClick="onCallClick"
+            android:src="@drawable/ic_calls" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Chat"
+            android:onClick="onChatClick"
+            android:src="@drawable/ic_chats" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Add"
+            android:onClick="onPlusClick"
+            android:src="@drawable/ic_plus" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Settings"
+            android:onClick="onSettingsClick"
+            android:src="@drawable/ic_settings" />
+    </LinearLayout>
+</RelativeLayout>
