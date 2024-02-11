@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,8 +7,8 @@
 
     <TextView
         android:id="@+id/userDetails"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="117dp"
+        android:layout_height="36dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="19dp"
@@ -26,57 +25,70 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp" />
 
+    <!-- List of people you can chat with -->
+    <!-- Adjust the top margin -->
+
+    <!-- Icon buttons at the bottom with reduced top margin -->
     <ListView
         android:id="@+id/chatList"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="598dp"
         android:layout_below="@id/userDetails"
-        android:layout_above="@id/iconButtons"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="62dp" />
 
     <LinearLayout
         android:id="@+id/iconButtons"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+        />
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="1dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:clickable="true"
             android:contentDescription="Call"
             android:onClick="onCallClick"
-            android:src="@drawable/ic_calls" />
+            android:src="@drawable/ic_calls"
+        />
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="47dp"
+            android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:clickable="true"
             android:contentDescription="Chat"
             android:onClick="onChatClick"
-            android:src="@drawable/ic_chats" />
+            android:src="@drawable/ic_chats"
+            />
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:clickable="true"
             android:contentDescription="Add"
             android:onClick="onPlusClick"
-            android:src="@drawable/ic_plus" />
+            android:src="@drawable/ic_plus"
+            />
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:clickable="true"
             android:contentDescription="Settings"
             android:onClick="onSettingsClick"
-            android:src="@drawable/ic_settings" />
+            android:src="@drawable/ic_settings"
+            />
     </LinearLayout>
 </RelativeLayout>

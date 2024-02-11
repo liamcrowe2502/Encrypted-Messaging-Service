@@ -1,18 +1,11 @@
 package com.example.encryptedmessagingservice;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-/*
-* MongoDB details
-* Username: liamcrowe2502
-* Pass: lcXnIOCpUrslSb9U
-* */
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
